@@ -1,0 +1,47 @@
+.carousel{
+    width: 850px;
+    margin: 10px auto;
+}
+
+.carousel-hider {
+    width: 650px;
+    overflow: hidden;
+    float: left;
+}
+ 
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    position: relative;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel-element p {
+    text-align: center;
+}
+
+.carousel-element img {
+    max-width: 200px;
+}
+ 
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
