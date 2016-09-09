@@ -1,11 +1,39 @@
 
 * {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+
 }
 
 .container{
     padding: 5px 10px 20px;
+}
+
+#holder{
+	width: 650px;
+    margin: 0 auto;
+    background-color: #EFEFEF;
+    box-shadow: 0 0 2px 2px #D3D3D3;
+    padding: 20px;
+}
+
+.underlined {
+    border-bottom: 1px solid #7B7B7B;
+}
+
+#holder img {
+    height: 100px;
+    display: block;
+    margin: 5% auto;
+    border: none;
+}
+
+#holder h1 {
+    font-size: 120%;
+    text-align: center;
+}
+
+#holder p {
+    text-align: center;
+    margin: 3%;
+
 }
 

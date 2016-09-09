@@ -4,22 +4,21 @@
 
     var user = {
         name: "Кожокарь Денис Анатольевич",
-        img: "img/ava.jpg",
-        about: "Студент GoIt направление фронтенд",
-        purposes:["Хочу работать в ИТ", 
+        img: '<img src="img/ava.jpg" alt="Ava" title="This is me!">',
+        description: "Студент GoIt направление фронтенд",
+        purposes: ["Хочу работать в ИТ", 
         "Поможет лучше разобраться с бекендом", 
         "Новые знания не бывают лишними"
         ],
         number: "+380666666666",
-        vk: "vk.com/denis_kozhokar",
+        link: '<a href="vk.com/denis_kozhokar">vk.com</a>',
         feedback: "Если нужно, могу сделать сайт на Codeigniter.",
-
     };
 
-    var tmpl = $('#profil-template').html();
-    var content = _.template(tmpl);
+    var tmpl = $('#profil_template').html();
+    content = _.template(tmpl);
 
 
-    $('#holder').append(content({user}));
+    $('#holder').append(content(user));
 
 });

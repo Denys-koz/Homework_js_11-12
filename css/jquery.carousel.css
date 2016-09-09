@@ -3,6 +3,12 @@
     margin: 10px auto;
 }
 
+.carousel:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
 .carousel-hider {
     width: 650px;
     overflow: hidden;

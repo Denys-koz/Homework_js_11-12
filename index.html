@@ -17,41 +17,41 @@
 		<div class="carousel-arrow-left"><span>Влево</span></div>
 	    <div class="carousel-hider">
 	        <ul class="carousel-list">
-	            <li class="carousel-element"><img src="img/img1.jpg"><p>Описание 1</p></li>
-			    <li class="carousel-element"><img src="img/img2.jpg"><p>Описание 2</p></li>
-			    <li class="carousel-element"><img src="img/img3.jpg"><p>Описание 3</p></li>
-			    <li class="carousel-element"><img src="img/img4.jpg"><p>Описание 4</p></li>
-			    <li class="carousel-element"><img src="img/img5.jpg"><p>Описание 5</p></li>
-			    <li class="carousel-element"><img src="img/img6.jpg"><p>Описание 6</p></li>
-			    <li class="carousel-element"><img src="img/img1.jpg"><p>Описание 7</p></li>
-			    <li class="carousel-element"><img src="img/img2.jpg"><p>Описание 8</p></li>
-			    <li class="carousel-element"><img src="img/img3.jpg"><p>Описание 9</p></li>
+	            <li class="carousel-element"><img src="img/img1.jpg"><p>Картинка 1</p></li>
+			    <li class="carousel-element"><img src="img/img2.jpg"><p>Картинка 2</p></li>
+			    <li class="carousel-element"><img src="img/img3.jpg"><p>Картинка 3</p></li>
+			    <li class="carousel-element"><img src="img/img4.jpg"><p>Картинка 4</p></li>
+			    <li class="carousel-element"><img src="img/img5.jpg"><p>Картинка 5</p></li>
+			    <li class="carousel-element"><img src="img/img6.jpg"><p>Картинка 6</p></li>
+			    <li class="carousel-element"><img src="img/img1.jpg"><p>Картинка 7</p></li>
+			    <li class="carousel-element"><img src="img/img2.jpg"><p>Картинка 8</p></li>
+			    <li class="carousel-element"><img src="img/img3.jpg"><p>Картинка 9</p></li>
 	        </ul>
 	    </div>
 	    <div class="carousel-arrow-right"><span>Вправо</span></div>
     </div>
     <div id="holder"></div>
 </div>
-<script type="text/template" id="profil-template">
+<script type="text/template" id="profil_template">
     <div class="underlined">
-    <h1><%-name%></h1>
-    <img src="<%-img%>" alt="Ava" title="This is me">
-    <p>Студент GoIt направление фронтенд</p>
-	</div>
+    	<h1><%-name%></h1>
+    	<%=img%>
+    	<p><%-description%></p>
+    </div>
     <div class="underlined">
         <p>Хочу учить фронтенд, потому что:</p>
-    <ul>
+    	<ul>
         <% for(var i = 0; i < purposes.length; i++) { %>
         <li>
             <%-purposes[i]%>
         </li>
         <% } %>
-    </ul>
+    	</ul>
     </div>
-     <div class="underlined">
-     	<p>Мой контактный телефон<br><%-number%></p>
-        <p>Мой профиль вконтакте<br><a href="<%-vk%>">vk.com</a> </p>
-     </div>
+    <div class="underlined">
+        <p>Мой контактный телефон<br><%-number%></p>
+        <p>Мой профиль вконтакте<br><%=link%> </p>
+    </div>
     <div>
         <p>Мой фидбек: <br> <%-feedback%></p>
     </div>
